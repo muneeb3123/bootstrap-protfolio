@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/bootstrap.bundle.js"></script>
 </head>
-<body class="bg-light">
-  
-    <nav class="nav navbar-expand-sm text-bg-light fixed-top ">
+<body class="bg-light ">
+  <div class="bg-white" style="border-bottom-left-radius: 100px;">
+    <nav class="nav navbar-expand-sm text-bg-light fixed-top bg-white">
       <div class="container-fluid row">
-    <a href="#" class="navbar-brand col-sm-9 px-5 pt-2 text-primary fw-bold ">My logo</a>
-    <ul class="navbar-nav col-sm-3">
-      <li class="nav-item mx-3"><a  class="nav-link text-dark" href="#">protfolio</a></li>
-      <li class="nav-item mx-3"><a  class="nav-link text-dark" href="#">about</a></li>
-      <li class="nav-item mx-3"><a  class="nav-link text-dark" href="#">contact</a></li>
-    </ul>
-  </div>
-</nav>
+        <a href="#" class="navbar-brand col-sm-9 px-5 pt-2 text-primary fw-bold ">My logo</a>
+        <ul class="navbar-nav col-sm-3">
+          <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Protfolio</a></li>
+          <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">About</a></li>
+          <li class="nav-item mx-3"><a class="nav-link text-dark" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 <main>
-<section class="container-fluid my-5 d-flex flex-column align-items-center bg-white" style="height: 90vh;">
+<section class="container my-5 d-flex flex-column align-items-center" style="height: 90vh; border-bottom-left-radius: 100px;">
   <h1 class="align-self-start mt-5 pt-5 fw-bold">
    <pre>I’m Alexandra 
 Glad to see you!</pre>
@@ -51,9 +51,10 @@ Glad to see you!</pre>
           </li>
         </ul>
 </section>
+</div>
 
 <section class="container" >
-  <article class="card  rounded-top-right col-sm-12" style="border-top-right-radius: 60px;">
+  <article class="card col-sm-12" style="border-radius: 20px;">
   <div class="d-flex">
     <div class="card-body col-6 ">
       <img src="req/tonic.png" alt="Project image" class="container-fluid">
@@ -94,7 +95,7 @@ Glad to see you!</pre>
 </section>
 
 <section class="container mt-5" >
-  <article class="card  rounded-top-right col-sm-12" style="border-top-right-radius: 60px;">
+  <article class="card  rounded-top-right col-sm-12" style="border-radius: 20px;">
   <div class="d-flex">
     <div class="card-body col-6 ">
       <img src="req/multi.png" alt="Project image" class="container-fluid">
@@ -135,7 +136,7 @@ Glad to see you!</pre>
 </section>
 
 <section class="container mt-5" >
-  <article class="card  rounded-top-right col-sm-12" style="border-top-right-radius: 60px;">
+  <article class="card  rounded-top-right col-sm-12" style="border-radius: 20px;">
   <div class="d-flex">
     <div class="card-body col-6 ">
       <img src="req/tonic_2.png" alt="Project image" class="container-fluid">
@@ -176,7 +177,7 @@ Glad to see you!</pre>
 </section>
 
 <section class="container mt-5" >
-  <article class="card  rounded-top-right col-sm-12" style="border-top-right-radius: 60px;">
+  <article class="card  rounded-top-right col-sm-12" style="border-radius: 20px;">
   <div class="d-flex">
     <div class="card-body col-6 ">
       <img src="req/multi_2.png" alt="Project image" class="container-fluid">
@@ -260,22 +261,24 @@ Glad to see you!</pre>
   </div>
 </section>
 
-<section class="bg-primary">
-  <div class="container mt-3">
-    <h2 class="text-light">Contact Form</h2>
-    <p class="text-light"> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+<section class="bg-primary" style="border-top-left-radius: 70px;">
+  <div class="container mt-3 pt-5">
+    <div class="container-fluid">
+    <h2 class="text-light fw-bold text-center">Contact Form</h2>
+    <p class="text-light text-center"> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
     <form action="/action_page.php">
       <div class="mb-3 mt-3">
-        <input type="text" class="form-control" id="name" placeholder="Muneeb" name="name" required>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name here" name="name" required>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" id="mail" placeholder="Enter email" name="email" required>
+        <input type="email" class="form-control" id="mail" placeholder="Enter your email here" name="email" required>
       </div>
       <div class="mb-3">
-        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Write your message here"></textarea>
       </div>
-      <button type="submit" class="btn btn-dark">Get in touch</button>
+      <button type="submit" class="btn btn-sm bg-white mb-5 p-2">Get in touch</button>
     </form>
+  </div>
   </div>
 </section>
 </main>
